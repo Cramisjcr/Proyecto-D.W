@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Estaremos listos para atenderte y brindarte mayor información.  ">
+ 
+    <link rel="stylesheet" href="../css/pruebacss.css">
+    <title>A&M Contacto</title>
+</head>
+<body >
+    <div  id="grilla">
+        <header id="oneHead">
+            <p id="principal">Arquitectura & Madera</p> 
+        </header>
+<!-- Nav dropdown-->
+<section class="p-menu1" id="sectionNavBar">
+    <nav id="navbar" class="navigation" role="navigation">
+      <input id="toggle1" type="checkbox" />
+      <label class="hamburger1" for="toggle1">
+        <div class="top"></div>
+        <div class="meat"></div>
+        <div class="bottom"></div>
+      </label>
+    
+      <nav class="menu1">
+        <a class="link1" href="/index.html">Inicio</a>
+        <a class="link1" href="products.html">Productos</a>
+        <a class="link1" href="services.html">Servicios</a>
+        <a class="link1" href="contacto.html">Contacto</a>
+        <a class="link1" href="blog.html">Blog</a>
+        
+      </nav>
+  </nav>
+  </section>
+<!-- Finaliza Nav dropdown--> 
+    <!-- Barra de Menú --> 
+    <nav class="nav" id="oneNav">
+      <ul class="nav__list">
+          <li class="nav__item nav__item--hover"><a class="nav__link nav__link--hover nav__link--visited" href="../index.html"> Inicio </a></li>
+          <li class="nav__item nav__item--hover" ><a class="nav__link nav__link--hover nav__link--visited" href="products.html"> Productos </a></li>
+          <li class="nav__item nav__item--hover" ><a class="nav__link nav__link--hover nav__link--visited" href="services.html"> Servicios </a></li>
+          <li class="nav__item nav__item--hover" ><a class="nav__link nav__link--hover nav__link--visited" href="contacto.html"> Contacto </a></li>
+          <li class="nav__item nav__item--hover" ><a class="nav__link nav__link--hover nav__link--visited" href="blog.html"> Blog </a></li>
+      </ul>
+  </nav>
+  <!-- Formulario Completo --> 
+        <main class="menu">
+        <!-- H1 -->           
+            <h1> Contacto e información</h1>
+        <br><br>
+        <section>
+            <h2>Información</h2>
+            <hr><br><br>
+        <article>
+            <form class="formulario" action="">
+                <fieldset class="formulario__fields">
+                    <legend> <b> Datos Personales</b></legend> <br>
+                <label for="name">
+                <span class="formulario__titulosForm" >Nombre: </span>
+                <input type="text" name="name" id="name" placeholder="Escribe tú nombre" required>
+                </label>
+                <br>
+                <label for="phone">
+                <span class="formulario__titulosForm" >Contacto: </span>
+                <input type="tel" name="phone" id="phone" placeholder="Número contacto" required>
+                </label>
+                <br>
+                <label for="maili">
+                <span class="formulario__titulosForm" >E-mail: </span>
+                <input type="email" name="maili" id="maili" placeholder="Correo electrónico" required>
+                </label>    
+                <br>
+                <br>
+                <label for="redes">
+                <span class="formulario__titulosForm" > ¿Dónde nos conocío?</span>
+                <br>
+                <select name="redes" id="redes">
+                    <option value="vacio"> </option>
+                    <option value="Instagram">Instagram</option>
+                    <option value="Facebook">Facebook</option>
+                    <option value="Twitter">Twitter</option>
+                    <option value="Periodico">Periodico</option>
+                    <option value="Recomendacio n">Recomendación</option>
+                </select>
+                </label>
+                <br><br>
+                <label for="comentario">
+                <span class="formulario__titulosForm" >   ¿Qué dudas tienes? </span>
+                <br>
+                <textarea name="comentario" id="comentario" cols="30" rows="10" placeholder="Comentarios"></textarea>
+                </label>
+                <br><br>
+                <label for="respuesta">
+                <span class="formulario__titulosForm" >¿Deseas ser contactado?</span>
+                <div>SI <input type="radio" name="respuesta" > NO <input type="radio" name="respuesta" ></div>
+                </label>
+                <br><br>
+                <label for="acepta">
+                <div> <input type="checkbox" name="acepta" value="1"> Acepta términos y condiciones</div> 
+                </label>
+                <br><br>
+                <input type="submit" class="formulario__botonEnRe" value="Enviar formulario">  
+                <input type="reset" class="formulario__botonEnRe" value="Reset Formulario"> 
+                </fieldset>
+            </form>
+             <br><br><br>
+        </article>    
+      
+        </main>
+        <!-- Barra de Footer con redes --> 
+        <footer class="foot">
+            <a  href="https://www.instagram.com/"> <img class="foot__linkImg" src="../multimedia/instagram copy_50.png" alt="instagram"></a>
+            <a  href="https://www.facebook.com/"><img class="foot__linkImg" src="../multimedia/facebook copy_50.png" alt="facebook"></a>
+            <a href="https://twitter.com/?lang=es"><img class="foot__linkImg" src="../multimedia/twitter copy_50.png" alt="twitter"></a>
+          <p>Hecho con 🖤</p>   <p id="aq">A & M Derechos reservados</p>
+      </footer>  
+    </div>
+      
+</body>
+</html>

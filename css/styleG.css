@@ -1,0 +1,249 @@
+*{
+    margin:0;
+    padding:0;
+}
+/*Body General*/
+body{
+    background-color: rgb(242, 242, 242);
+}
+/*Header General*/
+header{
+    background-color:rgb(38, 38, 38);
+    height: 200px;
+}
+header p{
+    color:rgb(242, 242, 242);
+    font-size: 400%;
+    text-align: center;
+    padding-top: 50px;
+}
+
+/*Nav General*/
+nav{
+    background-color: rgb(89, 77, 72);
+    height: 70px;
+    position:sticky;
+    top: 0%;    
+}
+ul{
+    list-style-type: none;
+    display:flex;
+    height: 100%;
+    justify-content:space-evenly;
+    padding-top: 10px;
+}
+
+li{
+    height: 100%;
+    color:rgb(242, 242, 242);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 20px;
+}
+li:hover{
+    transform: scale(1.2,1.2);
+}
+
+a{
+    text-decoration: none;
+    
+}
+a:hover{
+    background-color: rgb(150, 148, 148); 
+
+ }
+a:visited{
+    color:rgb(242, 242, 242);
+}
+
+
+/* Main General*/
+main{
+    margin:8%;
+}
+
+.textoJustificado{
+    text-align: justify;
+}
+hr{
+    width: 50%;
+    height: 2px;
+    border: none;
+    background-color: black;
+}
+#ancho{
+    width: 100%;
+    height: 400px;
+}
+
+/* Footer General*/
+footer{
+    background-color:rgb(38, 38, 38);
+    color:rgb(242, 242, 242);
+    text-align: center;
+    height: 100%;
+   
+}
+a img:hover{
+    transform: scale(1.1,1.1);
+}
+a img{
+    height: 60px;
+    text-align: center;
+}
+/* Uso de Grid en imagenes */
+.organi-Prodc div{    
+    color: rgb(38, 38, 38); 
+    font-size: 1rem;   
+    display: grid;
+    grid-template-columns: auto ; 
+    grid-template-rows: auto;
+    align-items: center;  
+    justify-items: center; 
+    
+}
+/* Media Query 0 a 600 PX*/
+@media only screen and (max-width:600px){
+    #grilla{
+        display:grid;
+        grid-template-columns: 100% ;
+        grid-template-rows: 10% 13% 100% 7%;
+        grid-template-areas: "header" "menu" "section" "footer";
+        grid-row-gap: 15px;
+    }
+  
+    #oneHead{
+        grid-area: header;
+        height: 150px;
+        font-size: 10px;
+    }
+    #oneNav600px{
+        grid-area: menu;
+
+    }
+    #oneNav{
+       
+        display: none;
+        
+    }
+ 
+    #oneMain{
+        grid-area: section;
+        margin:10%;
+        padding:0;
+    }
+    #italic{
+        text-align: justify;
+    }
+    #imgtt{
+        max-width: 100%;
+        height: 100%;
+    }
+    #menBoostrap{
+        background: black;
+        height: 50px;
+    }
+    .imgproycto2{
+       display: none;
+    }
+    #oneFoot{
+        grid-area: footer; 
+    }
+}
+/* Media Query 600 PX a 1024 PX*/
+@media screen and (min-width: 601px) and (max-width: 1023px){
+    #grilla{
+
+      display:grid;
+      grid-template-columns: 50% 50% ;
+      grid-template-rows: 10% 3% 100% 7%;
+      grid-template-areas: "header header" "menu menu" "section section" "footer footer";
+      grid-row-gap: 15px;
+      grid-column-gap: 10px;
+    }
+    #oneNav600px{
+    grid-area: menu;
+    position: sticky;
+    top:0px;
+    align-content: center;
+
+    }   
+    #oneNav{
+    display: none;
+    
+    }
+
+    #oneHead{
+      grid-area: header;
+    }
+    #oneNav{
+      grid-area: menu;
+      position: sticky;
+      top:0px;
+      align-content: center;
+    }
+  
+
+    #oneMain{
+      grid-area: section;
+      margin:5%;
+      padding:0;
+    }
+   
+    .imgproycto2{
+      display: none;
+    }
+    #oneFoot{
+      grid-area: footer;
+    } 
+
+}
+
+/* Media Quiery 1024 PX*/
+@media only screen and (min-width:1024px){
+  #grilla{
+
+      display:grid;
+      grid-template-columns: 50% 50% ;
+      grid-template-rows: 10% 3% 100% 7%;
+      grid-template-areas: "header header" "menu menu" "section section" "footer footer";
+      grid-row-gap: 15px;
+      grid-column-gap: 10px;
+  }
+
+ 
+  #oneHead{
+      grid-area: header;
+  }
+  #oneNav600px{
+   display: none;
+
+    }
+  #oneNav{
+      grid-area: menu;
+      position: sticky;
+      top:0px;
+      align-content: center;
+  }
+
+  #oneMain{
+      grid-area: section;
+  }
+  #italic{
+      font-style: italic;
+      font-size: 20px;
+      text-transform: capitalize;
+      line-height:30px;
+      text-align: center;
+  }
+  #oneFoot{
+      grid-area: footer;
+  }
+
+}
+ 
+
+
+
+   
+
+    

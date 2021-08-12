@@ -1,0 +1,210 @@
+@import "coloresTema";
+@import "variablesStyle";
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital@1&display=swap');
+*{
+    margin:0;
+    padding:0;
+}
+
+body{
+    background-color: $colorLetra;
+}
+/*SASS en header */
+header{
+    background-color:$colorFondo;
+    height: 200px;
+    p{
+    color:$colorLetra;
+    font-size: 400%;
+    text-align: center;
+    padding-top: 50px;
+
+    }
+
+}
+/* SASS en main*/
+.menu{
+    margin:8%;
+    p{
+        text-align: justify;
+    }
+    hr{
+        width: 50%;
+        height: 2px;
+        border: none;
+        background-color: black;
+    }
+
+}
+
+
+/*SASS en Nav con BEM 1 Bloque*/
+.nav{
+    background-color: $colorFondoNav;
+    height: 70px;
+    position:sticky;
+    top: 0%; 
+    &__list{
+        list-style-type: none;
+        display: flex;
+        height: 100%;
+        justify-content:space-evenly;
+        padding-top: 10px;
+    }
+    &__item{
+        height: 100%;
+        color: $colorLetra;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-size: 20px;
+        &:hover{
+            transform: scale(1.2,1.2);
+        }
+    }
+    &__link{
+        text-decoration: none;
+        &:hover{
+            background-color: rgb(150, 148, 148); 
+        }
+        &:visited{
+            color:$colorLetra;
+        }
+
+    }
+
+}
+/*SASS en section Index (Inicio) con BEM 2 Bloque*/
+.seccion{
+    color: rgb(38, 38, 38); 
+    font-size: 1rem;   
+    display: grid;
+    grid-template-columns: auto ; 
+    grid-template-rows: auto;
+    align-items: center;  
+    justify-items: center; 
+    &__text{
+        text-align: justify;
+        font-size: 18px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        
+    }
+    &__img{
+        border-radius: 10px;
+        &:hover{
+            transform: scale(1.2,1.2);
+        }
+    } 
+
+/*Uso de Mixing en divs Page Producto*/
+}
+@mixin producTexto($colorPro,$sizePro,$anchoDiv,$largoDiv,$fondoDiv){
+    color: $colorPro;
+    font-size: $sizePro;
+    width: $anchoDiv;
+    height: $largoDiv;
+    background-color: $fondoDiv;
+
+}
+.prodcutos_div{
+    display: flex;
+    justify-content: space-between;
+}
+
+#parraf{
+    @include producTexto($colorLetra,20px,400px ,200px,$colorFondo );
+    text-align: center;
+    padding-top: 50px;
+}
+/*SASS en prodcutos fotos con BEM 3 Bloque*/
+.seccionFotos{
+    display:flex;
+    justify-content: space-evenly;
+    &__div{
+        text-align: center;
+        p{
+            text-align: center;
+        }
+        &__producImg{
+                width: 100%;
+                height: 400px;
+                border-radius: 10px;
+                &:hover{
+                    transform: scale(1.1,1.1);
+                }
+            }
+
+        }
+    }
+
+/*SASS en Page Contacto con BEM 4 Bloque*/
+.formulario{
+  
+    &__titulosForm{
+            font-size: 20px;
+    }
+    &__botonEnRe{
+            background-color:$colorFondoNav;
+            color: white;
+            width: 200px;
+            height: 50px;
+            font-size: 20px;
+            
+    }
+    
+}
+
+/* Cuadro de textos en Services Usando Extend*/
+.cuadroTexto{
+    width: $ancho;
+    height: $alto;
+    font-family: 'Roboto', sans-serif;
+    font-size: $sizes;
+    
+}
+
+.cuadro{
+    @extend .cuadroTexto;
+    background-color: $colorFondoNav;
+    padding-top: 40px;
+}
+.texto3{
+    @extend .cuadroTexto;
+    text-align: center;
+    
+
+}
+.cuadro4{
+    @extend .cuadroTexto;
+    background-color: $colorFondoNav;
+    padding-top: 40px;
+
+}
+.texto5_{
+    @extend .cuadroTexto;
+    
+
+}
+
+/*SASS en Footer con BEM 5 Bloque*/
+.foot{
+    background-color:$colorFondo;
+    color:$colorLetra;
+    text-align: center;
+    height: 100%;
+
+    &__linkImg{
+        height: 60px;
+        text-align: center;
+        &:hover{
+            transform: scale(1.1,1.1);
+        }
+
+    }
+
+}
+
+
+
+
+   
+
+    
